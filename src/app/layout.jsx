@@ -1,6 +1,11 @@
-
+import { Jersey_15 } from 'next/font/google';
 import "./globals.css";
+import Nav from "./components/Nav"
 
+const jersey15 = Jersey_15({
+  subsets: ['latin'],
+  weight: ['400', '400'], // whatever weights you need
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -9,9 +14,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={jersey15.className}>
       <body>
         {children}
+        <Nav/>
       </body>
     </html>
   );
