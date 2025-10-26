@@ -1,6 +1,8 @@
 import React from 'react'
 import{JetBrains_Mono} from"next/font/google"
 import{House,MessageCircle,Globe,HeartPulse,User,Bell} from "lucide-react"
+import SearchBar from './SearchBar'
+import StorySection from './StorySection'
 const jetbrains=JetBrains_Mono({
   subsets:["latin"],
   weight:["400","700"]
@@ -22,7 +24,8 @@ const Nav = () => {
     </ul>
   </nav>
   <hr />
-  
+  <SearchBar/>
+  <StorySection/>
 
 </header>
   )
