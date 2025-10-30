@@ -1,9 +1,8 @@
 import React from 'react'
 import{JetBrains_Mono} from"next/font/google"
 import{House,MessageCircle,Globe,HeartPulse,User,Bell} from "lucide-react"
-import SearchBar from './SearchBar'
-import StorySection from './StorySection'
-import Mid from './Mid'
+
+import Link from 'next/link'
 
 const jetbrains=JetBrains_Mono({
   subsets:["latin"],
@@ -17,8 +16,8 @@ const Nav = () => {
         SOCIALIZE
       </h1></div> 
     <ul className='flex gap-24'>
-      <li className='flex x gap-2'><House/>HOME</li>
-      <li className='flex  gap-2 x'><MessageCircle/>MESSAGES</li>
+      <Link className='flex x gap-2' href="/"><House/>HOME</Link>
+      <Link className='flex  gap-2 x' href="/messages"> <MessageCircle/> MESSAGES</Link>
       <li className='flex x gap-2 '><Globe/>CHATROOM</li>
       <li className='flex x gap-2 '><HeartPulse/>SWIPES</li>
       <li className='flex x gap-2 '><Bell/>NOTIFICATIONS</li>
@@ -26,9 +25,7 @@ const Nav = () => {
     </ul>
   </nav>
   <hr />
-  <SearchBar/>
-  <StorySection/>
-<Mid/>
+  
 
 </header>
   )

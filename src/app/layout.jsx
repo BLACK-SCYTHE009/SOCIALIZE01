@@ -16,8 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jersey15.className}>
       <body>
+         <Nav/>
         {children}
-        <Nav/>
+       
       </body>
     </html>
   );

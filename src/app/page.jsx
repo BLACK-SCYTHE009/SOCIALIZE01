@@ -1,9 +1,17 @@
-import Image from "next/image";
+import React from 'react'
 
-export default function Home() {
+import SearchBar from './components/SearchBar'
+import StorySection from './components/StorySection'
+import Mid from './components/Mid'
+const Home = () => {
   return (
- <>
- 
- </>
-  );
+    <>
+
+<SearchBar/>
+  <StorySection/>
+<Mid/>
+  </>
+  )
 }
+
+export default Home

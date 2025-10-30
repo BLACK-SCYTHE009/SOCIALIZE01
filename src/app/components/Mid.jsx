@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Plus,Heart,MessageSquareText,Share2 } from 'lucide-react'
 const Mid = () => {
   return (
     <>
@@ -11,9 +11,18 @@ const Mid = () => {
           
           
           <section>
-            <div>
-              
-            </div>
+            <div className='flex gap-14  p-4 justify-center items-center'>
+              <button className='flex gap-2 text-xl '>Follow <Plus size={23}/></button>
+              <div className='flex gap-5 items-center'>              <div className='USer text-2xl'>User-xyz</div>
+              <div className='h-7 w-7 bg-white rounded-full'></div>
+              </div>
+               </div>
+<div className=' flex gap-24 justify-center'>
+<button className='block'><Heart strokeWidth={2.5}/></button>
+<button className='block'><MessageSquareText strokeWidth={2.5}/></button>
+<button className='block'><Share2 strokeWidth={2.5}/></button>
+</div>
+           
           </section>
           
           
