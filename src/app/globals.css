@@ -67,3 +67,19 @@ box-sizing: border-box;
   height: 100%;
 background-color: white;
 }
+
+.br{
+  border-right: 1.5px solid black;
+height: 70px;
+position: relative;
+
+}
+.c{
+
+ align-content: center;
+
+}
+.g{
+
+  gap: 1500px;
+}
