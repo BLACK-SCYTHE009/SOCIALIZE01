@@ -25,7 +25,8 @@ const Nav = () => {
     </ul>
   </nav>
   <hr />
-  
+
+
 
 </header>
   )

@@ -83,3 +83,36 @@ position: relative;
 
   gap: 1500px;
 }
+.Msp{
+  display: grid;
+  grid-template-columns:auto 1fr 50fr;
+}
+.df{
+  width: 126.5px;
+}
+.Msg-Bar{
+
+  width: 70%;
+  border-radius: 50px;
+  height: 3%;
+padding: 20px 90px;
+  margin: 20px;
+  z-index: -1;
+  
+}
+.po{
+height: fit-content;
+width: fit-content;
+  margin: 40px;
+  position: fixed;
+  bottom: 25;
+  left: 15%;
+  padding: 20px;
+}
+.p{
+ position: absolute;
+ bottom: -32;
+  z-index: 1;
+  gap: 1200px ;
+  left: 60;
+}
